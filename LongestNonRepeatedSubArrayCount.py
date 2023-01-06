@@ -1,15 +1,15 @@
-def solution(string):
-        longestSubArrayCount = 0
+def longestUniqueSubString(string):
+        longestUniqueSubStringCount = 0
         length = len(string)
         i = 0
         
         while i < length:
             count = countLongestArray(string,i)
-            if count > longestSubArrayCount:
-                longestSubArrayCount = count
+            if count > longestUniqueSubStringCount:
+                longestUniqueSubStringCount = count
             i += 1
                 
-        return longestSubArrayCount
+        return longestUniqueSubStringCount
             
     
 def countLongestArray(string,index):
