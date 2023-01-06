@@ -1,15 +1,15 @@
 def longestUniqueSubString(string):
-        longestUniqueSubStringCount = 0
+        longest_unique_substring_count = 0
         length = len(string)
         i = 0
         
         while i < length:
             count = countLongestArray(string,i)
-            if count > longestUniqueSubStringCount:
-                longestUniqueSubStringCount = count
+            if count > longest_unique_substring_count:
+                longest_unique_substring_count = count
             i += 1
                 
-        return longestUniqueSubStringCount
+        return longest_unique_substring_count
             
     
 def countLongestArray(string,index):
